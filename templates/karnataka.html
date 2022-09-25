@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="static/assets/css/ex.css">
+    
+
+</head>
+<body>
+  <header>
+       
+    <h1>TRAVELLING SHOTS</h1>
+    <nav>
+    <ul class="nav_links" >
+        <li><a class="nav_links" scrollto active href="/Home">Home</a></li>
+        <li><a class="nav_links" scrollto active href="/gallery">Gallery</a></li>
+        <li><a class="nav_links" scrollto active href="/about">About</a></li>
+       
+        </ul>
+        </nav>
+        <a class="nav_links" scrollto active href="/contact"><button>contact</button></a>
+</header>
+    
+        <img class="img_main"src="static/assets/img/photos/img7.jpg" >
+    
+       
+        
+
+       
+    <div class="line">
+
+    </div>   
+    <div class="line2">
+        .
+    </div> 
+
+    </div>
+
+    <div class='nav'>
+      <a href="/Home" ><h3>All Photos</h3></a>
+        
+
+        <a href='/karnataka' >Karnataka</a> <br>
+        <a href='/kerala' >Kerala</a><br>
+        
+        <a href='/maharashtra' >Maharashtra</a><br>
+        
+        <a href='/tamilnadu' >Tamil Nadu</a><br>
+    
+        </div>
+
+        <div class="fullimg" id="fullbox">
+          <img src="static/assets/img/photos/gallery/img1.jpg" id="fullrimg">
+          <span onclick="closeFullImg()" id="close">X</span>
+          <a href="static/assets/img/photos/gallery/img1.jpg" download="img" id="download"><button>Download</button></a><br>
+         <br> <button onclick="printImage();"   id="print">Print</button>
+          
+      </div>
+    <div id="bodyy">
+
+
+    <div class="containers">
+      <div class="heading">
+        <h3>Photo <span>Wall</span></h3>
+      </div>
+        
+        <div class="boxs">
+          
+          <div class="karnataka">
+            <img src="static/assets/img/karnataka/69.jpg" onclick="clickss(this.src)">
+            <img src="static/assets/img/karnataka/70.jpg" onclick="clickss(this.src)">
+            <img src="static/assets/img/karnataka/86.jpg" onclick="clickss(this.src)">
+            <img src="static/assets/img/karnataka/71.jpg" onclick="clickss(this.src)">
+            <img src="static/assets/img/karnataka/72.jpg" onclick="clickss(this.src)">
+            <img src="static/assets/img/karnataka/73.jpg" onclick="clickss(this.src)">
+            
+            
+            
+            
+    
+           
+                
+          </div>
+    
+            <div class="kerala">
+            
+                <img src="static/assets/img/karnataka/74.jpg" onclick="clickss(this.src)">
+                <img src="static/assets/img/karnataka/75.jpg" onclick="clickss(this.src)">
+                <img src="static/assets/img/karnataka/76.jpg" onclick="clickss(this.src)">
+                <img src="static/assets/img/karnataka/77.jpg" onclick="clickss(this.src)">
+                <img src="static/assets/img/karnataka/78.jpg" onclick="clickss(this.src)">
+                
+                
+                
+            
+            
+            
+             
+                
+          </div>
+    
+            <div class="maharashtra">
+                
+                <img src="static/assets/img/karnataka/79.jpg" onclick="clickss(this.src)">
+                <img src="static/assets/img/karnataka/80.jpg" onclick="clickss(this.src)">
+                <img src="static/assets/img/karnataka/81.jpg" onclick="clickss(this.src)">
+                <img src="static/assets/img/karnataka/74.jpg" onclick="clickss(this.src)">
+                <img src="static/assets/img/karnataka/82.jpg" onclick="clickss(this.src)">
+                
+                
+                
+          </div>
+
+          <div class="tamil_nadu">
+
+            <img src="static/assets/img/karnataka/83.jpg" onclick="clickss(this.src)">
+                <img src="static/assets/img/karnataka/84.jpg" onclick="clickss(this.src)">
+                <img src="static/assets/img/karnataka/85.jpg" onclick="clickss(this.src)">
+                <img src="static/assets/img/karnataka/86.jpg" onclick="clickss(this.src)">
+                <img src="static/assets/img/karnataka/87.jpg" onclick="clickss(this.src)">
+
+          </div>
+        </div>
+    </div>
+
+    <footer>
+
+      <div class="footer-content">
+      
+      
+      
+      <h3>Travelling Shots</h3>
+      
+     
+      
+      <p><address>
+          <strong>Target company Inc</strong><br>
+          <br>
+          JC Main Road, Near Silnile tower<br>
+           Pin-560040,Bangalore,India</address></p>
+      
+      
+      
+      <ul class="socials">
+      
+      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+      
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      
+      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+      
+      
+      
+      <li><a href="#"><i class="fa fa-youtube"></i></a></li> <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+      
+      </ul>
+      
+      </div>
+      
+     
+      
+      <div class="footer-bottom">
+      
+      <p>copyright &copy; 2020 travelling. designed by <span>abc</span></p>
+      
+      </div>
+      
+     
+      
+      </footer>
+    </div>
+
+      <script >
+        var fullbox = document.getElementById("fullbox");
+        var fullrimg = document.getElementById("fullrimg");
+        var down = document.getElementById("download");
+        var prints = document.getElementById("print");
+        var closee = document.getElementById("close");
+        var bodyy = document.getElementById("bodyy");
+        
+
+        function clickss(pic) {
+            fullbox.style.display = "flex";
+            fullrimg.src = pic;
+            down.href=pic;
+                }
+        
+        function closeFullImg() {
+            fullbox.style.display = "none";
+        }
+
+
+        function printImage(){
+            down.style.display = "none";
+            prints.style.display = "none";
+            closee.style.display = "none";
+            bodyy.style.display = "none";
+            
+            window.print();
+            down.style.display = "flex";
+            prints.style.display = "flex";
+            closee.style.display = "flex";
+            bodyy.style.display = "";
+
+            
+
+        }
+        </script>
+
+</body>
+</html>
