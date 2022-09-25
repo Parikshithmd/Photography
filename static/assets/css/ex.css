@@ -1,0 +1,666 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+h1{
+    color:#ffffff;
+    
+    font-family: gabriola;
+    font-weight: 500;
+    background-color: #926231;
+    padding: 0% 10px;
+    padding-right: 30px;
+    border-radius:0px 200px 0px 0px ;
+    line-height: 60px;
+    
+}
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 30px 10px;
+    height: 20px;
+    font-size: 1.5vw;
+   top:0;
+   left: 0;
+  
+   position: fixed;
+    
+    background-color:white;
+    width: 100%;;
+    overflow: hide;
+    margin-bottom:40px ;
+    box-shadow: 0 1px 1px 0 rgba(128, 79, 17, 0.1), 0 1px 1px 0 rgba(124, 82, 27, 0.307); 
+}
+li,a,button{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 1.5vw;
+    color:#875D34;
+    text-decoration: none;
+
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+    
+}
+.nav_links li a:hover{
+    background-color:#875D34;
+    border-radius: 50px;
+    color:#faf5f5;
+    padding: 0 8px;
+}
+button{
+    padding: 9px 25px;
+    background-color:#875D34;
+    border-radius: 50px;
+    border: none;
+    color:white;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color:#5e3b19;
+}
+.line{
+    width: 80%;
+    height: 4px;
+    background-color:#875D34;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 40px;
+    
+}
+
+.line2{
+    margin-top: 2px;
+    width: 80%;
+    height: 2px;
+    background-color:#875D34;
+    margin-left: 10%;
+    right: 10%;
+
+
+}
+.h1{
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 0%;
+    margin-top: 20px;
+    font-size: 2em;
+    font-family:gabriola ;
+}
+
+
+.img_main{
+    width: 70%;
+    
+    display:flexbox;
+    
+    margin-top: 10%;
+    
+    margin-left:15%;
+    
+    max-height: 500px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.6), 0 10px 40px 0 rgba(0, 0, 0, 0.40);
+    
+    
+    
+    
+
+}
+/*
+
+ .places label:hover{
+    background-color: #faf5f5;
+    opacity: 100%;
+ }
+
+.places {
+    
+     align-items: center;
+     justify-content: center;
+    color:#875D34;
+    
+    
+    
+    font-weight: bold;
+    
+   
+   font-size: 1.5vw;
+   
+   
+    padding: 3% 1%;  
+    
+    
+}
+
+
+.single-img{
+    position: relative;
+    
+    
+    
+
+}
+
+
+
+.gallery{
+    display: grid;
+    margin: 40px 0;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+.gallery img{
+    
+    cursor: pointer;
+}
+.gallery img:hover {
+    transform: scale(1.1);
+}
+*/
+
+.fullimg{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    
+}
+.fullimg img{
+    width: 80%;
+    margin-top: 5%;
+    border: white 5px solid;
+    border-radius: 2px;
+    
+    max-width: 500px;
+}
+
+.fullimg span {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer
+}
+.fullimg button {
+  color:white;
+  
+  margin-left: 50px;
+}
+
+.containers .heading{
+    width: 50%;
+    padding-bottom: 50px;
+  }
+  .containers .heading h3{
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    color: #875D34;
+    border-bottom: 3px solid #875D34;
+  }
+  
+  .containers .heading h3 span{
+    font-weight: 100;
+    color: #875D34;
+    font-family: gabriola;
+  }
+
+.containers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+  }
+.containers .boxs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   }
+
+
+
+    .containers .boxs .karnataka{
+        display: flex;
+        flex-direction: column;
+        width: 23%;
+        
+      }
+      .containers .boxs .kerala {
+        display: flex;
+        flex-direction: column;
+        width: 23%;
+      }
+      .containers .boxs .maharashtra {
+    
+        display: flex;
+        flex-direction: column;
+        width: 23%;
+      }
+    
+      .containers .boxs .tamil_nadu{
+        display: flex;
+        flex-direction: column;
+        width: 23%;
+      }
+      
+      .boxs{
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 5px;
+        
+        background-color:#8a5a2abe;
+        border: 7px solid black;
+        padding: 10px;
+      }
+    
+      
+      .containers .boxs .karnataka img{
+        width: 100%;
+        padding-bottom: 0px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        border: 5px solid #000000 ;
+        
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.6), 0 5px 10px 0 rgba(0, 0, 0, 0.60);
+      }
+      .containers .boxs .kerala img{
+        width: 100%;
+        padding-bottom: 0px;
+        cursor: pointer;
+        border-radius: 5px;
+        
+        margin-bottom: 15px;
+        border: 5px solid #000000 ;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.6), 0 5px 10px 0 rgba(0, 0, 0, 0.60);
+      }
+      .containers .boxs .maharashtra img{
+        width: 100%;
+        padding-bottom: 0px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        border: 5px solid #000000 ;
+        
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.6), 0 5px 10px 0 rgba(0, 0, 0, 0.60);
+      }
+      .containers .boxs .tamil_nadu img{
+        width: 100%;
+        padding-bottom: 0px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        border: 5px solid #000000 ;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.6), 0 5px 10px 0 rgba(0, 0, 0, 0.60);
+      }
+     
+      @media only screen and (max-width: 769px){
+        .containers .boxs{
+       flex-direction: column;
+      }
+    
+    .containers .boxs .karnataka{
+      width: 100%;
+    }
+    .containers .boxs .kerala{
+        width: 100%;
+      }
+    
+      .containers .boxs .maharashtra{
+        width: 100%;
+      }
+      .containers .boxs .tamil_nadu{
+        width: 100%;
+      }
+        
+    
+    
+    
+    }
+    .nav{
+      
+      width:100%;
+      margin: 20px auto 0px auto;
+      
+      height: 60px;
+      display: flex;
+      align-items:center;
+      justify-content:center;
+      border-radius: 5px;
+
+      
+      
+      
+
+
+    }
+    .nav  h3{
+
+      height: 100%;
+      background-color: #875d34d8;
+      line-height: 60px;
+      padding: 0 30px;
+      color: white;
+      align-items: flex-start;
+      padding-left: 30px;
+      padding-right: 30px;
+      
+    }
+
+    .nav  a{
+      display: inline-block;
+      
+      height: 100%;
+      margin: 15px 15px;
+      margin-right: 20px;
+      line-height: 60px;
+      font-size: 18px;
+      color: #875D34;
+      cursor: pointer;
+    }
+
+    .nav a:hover{
+      font-size: 20px;
+    }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* header */
+
+
+.container{
+    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0 20px;
+}
+
+.container .heading{
+    margin-top: 5%;
+  width: 50%;
+  padding-bottom: 50px;
+}
+.container .heading h3{
+  font-size: 3em;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  color: #875D34;
+  border-bottom: 3px solid #875D34;
+}
+
+.container .heading h3 span{
+  font-weight: 100;
+  color: #875D34;
+  font-family: gabriola;
+}
+.container .box{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.container .box .dream{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.container .box .dream img{
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 5px;
+
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.6), 0 5px 10px 0 rgba(0, 0, 0, 0.60);
+}
+
+.container .btn{
+  margin: 40px 0 70px 0;
+  background: #222;
+  padding: 15px 40px ;
+  border-radius: 5px;
+}
+
+.container .btn a{
+ color: #fff;
+ font-size: 1.2em;
+ text-decoration: none;
+ font-weight: bolder;
+ letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 769px){
+    .container .box{
+   flex-direction: column;
+  }
+
+.container .box .dream{
+  width: 100%;
+}
+
+
+
+
+
+}
+
+@media only screen and (max-width: 643px){
+.container .heading{
+  width: 100%;
+}
+.container .heading h3{
+  font-size: 1em;
+
+}
+
+
+
+
+
+
+
+}
+
+/*footer*/
+
+footer {
+  margin-top: 20px;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+
+  
+  background: #111;
+  
+
+  
+  height: auto; width: 100vw;
+  
+
+  
+  font-family: "Open Sans";
+  
+
+  
+  padding-top: 40px;
+  
+
+  
+  color: #fff;
+  
+ }
+  
+  .footer-content{
+  
+  display: flex;
+  
+
+  
+  align-items: center;
+  
+  justify-content: center;
+  
+
+  
+  flex-direction: column;
+  text-align: center;
+  }
+
+  .footer-content h3{
+
+
+    
+    font-size: 1.8rem;
+    
+
+    font-weight: 400;
+
+    text-transform: capitalize;
+ 
+    
+    line-height: 3ren;
+    
+  }
+    
+
+    
+    .footer-content p{
+    
+    max-width: 500px;
+    
+
+    
+    margin: 10px auto;
+    
+
+    
+    line-height: 28px;
+    
+
+    
+    font-size: 14px;
+    
+ }
+    
+
+    .socials{
+    
+
+    
+    list-style: none;
+    
+
+    
+    display: flex;
+    
+    
+    
+    align-items: center;
+    
+   
+    
+    justify-content: center; margin: 1rem 0 3rem 0;
+    }
+
+    .socials li{
+
+       margin: 0 10px;
+      
+     }
+      .socials a{
+      
+    
+      
+      text-decoration: none;
+      
+      color: #fff;
+      
+      }
+      
+      .socials a i{
+      
+      font-size: 1.1rem;
+      
+      transition: color .4s ease;
+      }
+      
+      .socials a:hover i{
+      
+      color: aqua;
+      
+      }
+
+
+.footer-bottom{
+
+ background: #000;
+
+
+
+width: 100vw;
+
+padding: 20px 0;
+
+text-align: center;
+}
+
+ .footer-bottom p{
+
+ font-size: 14px;
+
+
+
+word-spacing: 2px;
+
+text-transform: capitalize;
+
+}
+
+
+
+.footer-bottom span{
+
+text-transform: uppercase;
+
+
+opacity: .4;
+
+font-weight: 200;
+}
+    
+   
